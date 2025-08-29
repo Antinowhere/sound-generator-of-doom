@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-white rounded-full cursor-pointer transition-all hover:scale-110;
+  }
+  
+  .slider::-moz-range-thumb {
+    @apply w-4 h-4 bg-white rounded-full cursor-pointer border-0 transition-all hover:scale-110;
+  }
+}
